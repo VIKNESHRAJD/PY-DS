@@ -87,4 +87,18 @@ for i in range(1, n + 1):
 print("Factorial:", fact)
 
 
+# First n Fibonacci Numbers
+n = int(input("Enter n: "))
+a, b = 0, 1
+for _ in range(n):
+ print(a, end=" ")
+ a, b = b, a + b
+
+
+#Multiplication Table of a Number
+n = int(input("Enter a number: "))
+for i in range(1, 11):
+ print(n, "x", i, "=", n * i)
+    
+
 
