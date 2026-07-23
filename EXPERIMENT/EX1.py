@@ -116,3 +116,15 @@ count = sum(1 for x in lst if x % 2 == 0)
 print("Even count:", count)
 
 
+## Count Vowels in a String
+s = input("Enter a string: ")
+vowels = "aeiouAEIOU"
+count = sum(1 for ch in s if ch in vowels)
+print("Vowel count:", count)
+
+
+#Remove Duplicate Elements from a List
+lst = list(map(int, input("Enter list elements: ").split()))
+unique = list(set(lst))
+print("Without duplicates:", unique)
+ ##Remove Duplicate Elements from a List
