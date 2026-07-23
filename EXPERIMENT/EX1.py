@@ -100,5 +100,19 @@ n = int(input("Enter a number: "))
 for i in range(1, 11):
  print(n, "x", i, "=", n * i)
     
+# Prime Numbers up to n
+n = int(input("Enter n: "))
+for num in range(2, n + 1):
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            break
+    else:
+        print(num, end=" ")
+
+
+# Count Even Numbers in a List
+lst = list(map(int, input("Enter list elements: ").split()))
+count = sum(1 for x in lst if x % 2 == 0)
+print("Even count:", count)
 
 
