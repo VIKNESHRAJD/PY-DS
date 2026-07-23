@@ -127,4 +127,29 @@ print("Vowel count:", count)
 lst = list(map(int, input("Enter list elements: ").split()))
 unique = list(set(lst))
 print("Without duplicates:", unique)
- ##Remove Duplicate Elements from a List
+
+
+
+#Word Frequency Using a Dictionary
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+freq = {}
+for word in words:
+ freq[word] = freq.get(word, 0) + 1
+print(freq)
+
+
+
+ # Function to Add Two Numbers
+def add(a, b):
+ return a + b
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+print("Sum:", add(x, y))
+
+
+# Function to Return the Maximum Element in a List
+def max_element(lst):
+ return max(lst)
+lst = list(map(int, input("Enter list elements: ").split()))
+print("Maximum:", max_element(lst))
