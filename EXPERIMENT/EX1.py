@@ -77,3 +77,14 @@ if sum(d ** power for d in digits) == n:
     print("Armstrong number")
 else:
     print("Not an Armstrong number")
+
+
+#Factorial Using a Loop
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+ fact *= i
+print("Factorial:", fact)
+
+
+
